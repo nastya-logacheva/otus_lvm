@@ -128,7 +128,7 @@ root@lvm:/# lvcreate -L 100MB -s -n home_snap /dev/ubuntu-vg/LogVol_Home
 в) Удаляем часть файлов 
 root@lvm:/# rm -f /home/file{11..20}
 
-г) восстановится со снапшота.
+г) Восстановление из снапшота.
 root@lvm:/# umount /home
 root@lvm:/# lvconvert --merge /dev/ubuntu-vg/home_snap
   Merging of volume ubuntu-vg/home_snap started.
